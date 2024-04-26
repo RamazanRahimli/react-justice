@@ -1,0 +1,158 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.twoBox {
+    min-height: 70vh;
+    background-color: #37373F;
+    display: flex;
+    justify-content: space-between;
+}
+/* leftox  */
+.twoBox .leftBox {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.leftBox h2 {
+    font-size: 50px;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+    align-self: center;
+}
+
+.leftBox a {
+    text-decoration: none;
+    color: #B49C73;
+    font-weight: 700;
+}
+
+/* writebox  */
+.writeBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+    width: 60%;
+    align-self: center;
+    margin-left: 50px;
+}
+
+.writeBox p {
+    color: #5D5D64;
+    font-weight: 400;
+}
+
+.writeBox button {
+    padding: 15px 20px;
+    border-radius: 70px;
+    font-weight: 400;
+    background-color: #B49C73;
+    border: 2px solid #B49C73;
+    color: white;
+    font-size: 15px;
+    width: 40%;
+}
+
+/* rightBox  */
+
+.rightBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.rightBox .container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.rightBox .container .logoWriteBox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logoWriteBox h5 {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+.logoWriteBox h5 a {
+    text-decoration: none;
+    background-color: #5F5F65;
+    font-size: 40px;
+    color: white;
+    border-radius: 50%;
+    padding: 0 10px;
+}
+
+
+/* textBox  */
+.textBox {
+    display: flex;
+    flex-wrap: wrap;    justify-content:space-between ;
+    align-items: center;
+}
+
+.textBox a {
+    text-decoration: none;
+    color: #B49C73;
+}
+.textBox span {
+    text-decoration: none;
+    color: #5D5D64;
+    cursor: pointer;
+}
+
+
+/* atag */
+
+.container .aTag {
+    text-decoration: none;
+    color: #B49C73;
+    width: 30%;
+}
+
+.container .aTag:hover {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (min-width:300px) and (max-width:991px) {
+    .twoBox  {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .twoBox .leftBox {
+        width: 100%;
+    }
+    .leftBox h2 {
+        font-size: 30px;
+    }
+    .writeBox {
+        align-self: none;
+        width: 90%;
+        margin-right: 50px;
+    }
+    .writeBox button {
+        padding: 10px 20px;
+    }
+    .rightBox {
+        width: 100%;
+    }
+    .container .aTag {
+        width: 50%;
+    }
+}

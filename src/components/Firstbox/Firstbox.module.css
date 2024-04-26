@@ -1,0 +1,73 @@
+.firstBox {
+    min-height: 100vh;
+    background-image: url("../../../assets/images/hero_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+}
+.writeBox {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.writeBox h1 {
+    font-size: 60px;
+    width: 70%;
+    font-weight: 500;
+    cursor: pointer;
+}
+.writeBox a {
+    color: #B49C73;
+    text-decoration: none;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.writeBox span {
+    font-size: 20px;
+    font-weight: 400;
+    color: #A2ADB4;
+    margin: 0;
+    width: 70%;
+    cursor: pointer;
+}
+
+.writeBox button {
+    padding: 15px 40px;
+    border-radius: 40px;
+    font-weight: 400;
+    background-color: #B49C73;
+    border: 2px solid #B49C73;
+    color: white;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-right: 270px;
+    cursor: pointer;
+}
+.writeBox button:hover {
+    background-color: #BBA580;
+}
+
+@media screen and (min-width:300px) and (max-width:991px) {
+    /* section first  */
+    .writeBox {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+        margin-left: 10px;
+    }
+    .writeBox button {
+        padding: 15px 50px;
+    }
+    .writeBox h1 {
+        width: 100%;
+        font-size: 44px;
+    }
+    .writeBox span {
+        width: 100%;
+    }
+}

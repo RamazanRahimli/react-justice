@@ -1,0 +1,116 @@
+.fourBox {
+    min-height: 70vh;
+    background-color: #2D2D34;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* leftBOx 00 */
+
+.leftBox h1 {
+    color: white;
+    cursor: pointer;
+    font-size: 50px;
+    font-weight: 500;
+    display: flex;
+    gap: 15px;
+}
+
+.leftBox h1 a {
+    text-decoration: none;
+    color: #B49C73;
+    font-weight: 700;
+}
+
+/* rigthBox  */
+.rigthBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 25px 20px 0;
+}
+
+.rigthBox .writeBox {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 31%;
+    background-color: white;
+
+}
+
+/* imgBox */
+.imgBox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    background-color: #2D2D34;
+}
+
+.img1 {
+    background-image: url("../../../assets/images/person_1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.img2 {
+    background-image: url("../../../assets/images/person_2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.img3 {
+    background-image: url("../../../assets/images/person_3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.nameBox {
+    display: flex;
+    flex-direction: column;
+}
+
+.nameBox strong {
+    color: white;
+    cursor: pointer;
+}
+
+.nameBox span {
+    color: #6E6E73;
+    cursor: pointer;
+}
+
+
+
+@media screen and (min-width:300px) and (max-width:991px) {
+    .leftBox h1 {
+        font-size: 30px;
+    }
+
+    .rigthBox .writeBox {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .rigthBox {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+}

@@ -1,0 +1,107 @@
+.threeBox {
+    min-height: 70vh;
+    background-color: #37373F;
+    display: flex;
+    justify-content: center;
+}
+.container {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* leftBOx */
+
+.leftBox {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.leftBox h1 {
+    color: white;
+    cursor: pointer;
+    width: 70%;
+    font-size: 50px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.leftBox h1 a {
+    color: #B49C73;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* right box  */
+
+.rightBox {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.rightBox .writeBox {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+/* writeBox  */
+
+.writeBox span a {
+    font-size: 88px;
+    font-weight: 300;
+    cursor: pointer;
+    color: #B49C73;
+    text-decoration: none;
+
+}
+
+.writeBox span {
+    font-size: 88px;
+    font-weight: 300;
+    cursor: pointer;
+    color: white;
+}
+.writeBox  strong {
+    color: white;
+    cursor: pointer;
+}
+
+.writeBox p {
+    color: #B2B2A4;
+}
+
+@media screen and (min-width:300px) and (max-width:991px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .leftBox {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .leftBox h1 {
+        color: white;
+        cursor: pointer;
+        width: 100%;
+        font-size: 35px;
+        font-weight: 500;
+    }
+    .rightBox {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .rightBox .writeBox {
+        width: 90%;
+    }
+
+
+}

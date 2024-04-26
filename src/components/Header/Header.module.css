@@ -1,0 +1,81 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+
+.container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.leftBox {
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+}
+
+.leftBox h1 {
+    cursor: pointer;
+}
+
+.leftBox span {
+    height: 4px;
+    width: 4px;
+    background-color: #A2ADB4;
+    margin-top: 23px;
+}
+
+/* menuBox */
+.menuBox ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.menuBox li {
+    list-style-type: none;
+}
+.menuBox a {
+    text-decoration: none;
+    color: #A2ADB4;
+}
+.menuBox a:hover {
+    text-decoration: none;
+    color:black;
+    cursor: pointer;
+}
+
+
+.menuBox .homeTag {
+    color: black;
+}
+
+.menuTag {
+    font-size: 20px;
+    padding: 0 5px;
+    margin: auto;
+    display: none;
+}
+
+@media screen and (min-width:300px) and (max-width:991px) {
+    .menuBox a {
+        display: none;
+    }
+    .menuTag {
+        display: block;
+    }
+}
